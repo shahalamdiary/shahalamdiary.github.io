@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for the My Diary Android application.">
+<title>Privacy Policy — My Diary</title>
+<style>
+:root{--purple:#673ab7;--ink:#292333;--muted:#625b6b;--line:#eee8f4}
+*{box-sizing:border-box}body{margin:0;background:#faf8fd;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.72}.wrap{max-width:850px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:8px 0 30px}.top a{color:var(--purple);text-decoration:none;font-weight:650}.paper{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,5vw,48px);box-shadow:0 8px 28px #4c28700b}h1{font-size:2.35rem;line-height:1.15;color:#43266e;margin:0 0 8px}h2{font-size:1.2rem;color:#43266e;margin:28px 0 8px}p,li{color:#4e4858}.date{color:var(--muted);font-size:.9rem}.callout{background:#f7f1ff;border-left:4px solid var(--purple);padding:14px 16px;border-radius:10px;margin:20px 0}.contact{overflow-wrap:anywhere}footer{color:var(--muted);font-size:.9rem;padding:24px 0}a{color:var(--purple)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="index.html">← My Diary Home</a><span>Privacy Policy</span></div>
+  <main class="paper">
+    <h1>Privacy Policy</h1>
+    <p class="date">For the My Diary Android application · Effective date: 21 November 2026</p>
+    <p>This Privacy Policy explains how My Diary (“the app”) handles information when you use the application. My Diary is a personal diary app that lets users create diary entries, add photos and use available backup and synchronization features.</p>
+
+    <h2>1. Information you provide</h2>
+    <p>Depending on the features you use, information may include your account email address, diary titles, dates, written notes and photos you choose to add. Login credentials are used by Firebase Authentication to authenticate your account. The app does not intentionally ask you to enter information unrelated to its diary and account functions.</p>
+
+    <h2>2. Where information is stored</h2>
+    <ul>
+      <li><strong>On your device:</strong> Diary entries and related app data can be stored locally using the app's Room database. Profile-photo data may also be stored locally on your device.</li>
+      <li><strong>Firebase:</strong> When account and synchronization features are used, account authentication is handled by Firebase Authentication and diary data may be synchronized with Google Firebase/Cloud Firestore under your user account.</li>
+      <li><strong>Google Drive:</strong> If you choose to use Google Drive backup, the app can access files that it creates or that you explicitly select, using the Google Drive <code>drive.file</code> permission. This is used for supported diary-photo and profile-photo backup or restore functions.</li>
+    </ul>
+
+    <h2>3. How information is used</h2>
+    <p>Information is used to provide diary writing and editing, display your saved entries and photos, authenticate your account, synchronize diary data, and perform backup or restore actions that you request or enable.</p>
+
+    <h2>4. Google Account and Drive permissions</h2>
+    <p>Google Account selection for Drive authorization is separate from your My Diary Firebase sign-in. When you authorize Google Drive, Google may show its own account and consent screens. The app uses the limited <code>drive.file</code> scope for files created by or explicitly opened with the app; it does not request general access to your entire Google Drive through the broad Drive scope.</p>
+    <p>You can choose not to use Google Drive backup. If you do not authorize it, the app's Drive backup and restore functions will not be available.</p>
+
+    <h2>5. Sharing and third-party services</h2>
+    <p>My Diary does not sell your personal diary content. The app relies on Google Firebase services for authentication and synchronization, and Google Drive when you choose to use Drive backup. Those services process information under their own terms and privacy policies. Information may also be disclosed if required by applicable law or to protect the security of the service.</p>
+
+    <h2>6. Data security</h2>
+    <p>The app uses the security features provided by Android, Firebase and Google Drive. No method of electronic storage or transmission is completely secure. Keep your device and account credentials protected, and do not share your login code or password with others.</p>
+
+    <h2>7. Your choices and data deletion</h2>
+    <p>You can choose whether to use optional Google Drive backup. You can edit or delete diary entries within the app. Removing local app data or uninstalling the app may remove data stored only on that device. Data already synchronized to Firebase or backed up to Google Drive may remain there until it is deleted through the applicable app or service. If you need help with an account or data-related request, contact the developer using the address below.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>My Diary is not designed to knowingly collect personal information from children in violation of applicable law. If you believe a child has provided personal information improperly, contact the developer.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>This policy may be updated when app features or data practices change. The latest version will be published on this page with an updated effective date.</p>
+
+    <h2>10. Contact</h2>
+    <p class="contact">For questions or privacy requests, contact: <a href="mailto:digitalseba71@gmail.com">digitalseba71@gmail.com</a></p>
+
+    <div class="callout"><strong>Important:</strong> This policy is a draft based on the app features currently described by the developer. Review it against the final released app and actual data practices before submitting it for Google OAuth verification.</div>
+  </main>
+  <footer>© <span id="year"></span> My Diary</footer>
+</div>
+<script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>

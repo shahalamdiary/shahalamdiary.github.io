@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="My Diary — a personal diary app to write, keep memories, and protect your moments.">
+<title>My Diary — Your Personal Diary</title>
+<style>
+:root{--purple:#673ab7;--pink:#fce4ec;--ink:#292333;--muted:#665f70;--paper:#fff;--line:#eee8f4}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(140deg,#fce4ec 0%,#f7f2ff 48%,#fff 100%);line-height:1.65}
+.wrap{max-width:1040px;margin:auto;padding:24px}.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:8px 0}.brand{font-weight:800;font-size:1.25rem;color:var(--purple);letter-spacing:.2px}.nav a,.btn{color:var(--purple);text-decoration:none;font-weight:650}.hero{padding:76px 0 56px;text-align:center}.book{font-size:58px;line-height:1}.eyebrow{color:var(--purple);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;margin-top:18px}h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.08;margin:12px 0;color:#34234d}h2{color:#43266e;margin-top:0}.lead{max-width:680px;margin:18px auto;color:var(--muted);font-size:1.12rem}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 20px;border-radius:999px;background:var(--purple);color:white}.btn.alt{background:white;border:1px solid #d8c9ef;color:var(--purple)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:28px 0 58px}.card{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 28px #4c28700b}.card .emoji{font-size:28px}.card h3{margin:10px 0 6px}.card p{color:var(--muted);margin:0}.notice{background:#fff;border-left:4px solid var(--purple);padding:18px 20px;border-radius:12px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:.92rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer a{color:var(--purple)}@media(max-width:600px){.wrap{padding:18px}.hero{padding:56px 0 36px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav"><div class="brand">📖 My Diary</div><a href="privacy.html">Privacy Policy</a></nav>
+  <main>
+    <section class="hero">
+      <div class="book" aria-hidden="true">📔</div>
+      <div class="eyebrow">Your moments. Your memories.</div>
+      <h1>A personal space<br>for your everyday story.</h1>
+      <p class="lead">My Diary helps you write personal entries, keep meaningful memories and revisit the moments that matter to you.</p>
+      <div class="actions">
+        <a class="btn" href="privacy.html">Read our Privacy Policy</a>
+        <a class="btn alt" href="#features">Explore features</a>
+      </div>
+    </section>
+    <section id="features" class="grid">
+      <article class="card"><div class="emoji">✍️</div><h3>Write privately</h3><p>Create and edit diary entries in a simple, comfortable writing space.</p></article>
+      <article class="card"><div class="emoji">🖼️</div><h3>Keep memories</h3><p>Add photos to entries and keep important moments together with your notes.</p></article>
+      <article class="card"><div class="emoji">☁️</div><h3>Backup options</h3><p>Use supported sync and Google Drive backup features to help keep your diary data available across devices.</p></article>
+    </section>
+    <div class="notice"><strong>Your privacy matters.</strong> Diary entries and photos are personal. Please review the Privacy Policy to understand how My Diary handles app data, Firebase services and optional Google Drive backup.</div>
+  </main>
+  <footer><span>© <span id="year"></span> My Diary</span><span><a href="privacy.html">Privacy Policy</a></span></footer>
+</div>
+<script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>
